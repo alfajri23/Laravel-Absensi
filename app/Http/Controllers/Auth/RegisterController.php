@@ -64,9 +64,18 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        if($data['role'] == "siswa"){
+            $absensi = 1;
+        }else{
+            $absensi =2;
+        }
+
+        //dd($absensi);
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'role' => $data['role'],
+            'id_jadwal' => $absensi,
             'password' => Hash::make($data['password']),
         ]);
     }
