@@ -1,11 +1,44 @@
 # Laravel-Absensi
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Projek ini merupakan program absensi yang dapat mencatat rekapan absensi siswa atau pegawai secara online, 
+didalamnya disediakan 2 role yaitu user dan admin. User dapat melakukan presensi sesuai jadwalnya dan 
+Admin dapat mengelola waktu absen hari libur dan melihat catatan kehadiran user.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+### Dibuat dengan
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Program ini dibuat dengan 
+* [Laravel 8](https://laravel.com)
+* [Bootstrap](https://getbootstrap.com)
+* [JQuery](https://jquery.com)
+
+## Memulai proyek
+
+Instruksi untuk memulai proyek
+
+### Instalasi
+
+1.Clone proyek dari github git 
+
+2.Jalankan composer install
+   ```sh
+   composer install
+   ```
+3.Salin .env.example .env
+
+4.Jalankan php artisan key:generate
+   ```sh
+   php artisan key:generate
+   ```
+5.Jalankan php artisan migrate
+   ```sh
+   php artisan migrate
+   ```
+
+6.Jalankan php artisan db:seed
+   ```sh
+   php artisan db:seed
+   ```
+7.Jalankan php artisan serve
+    ```sh
+   php artisan serve
+   ```
