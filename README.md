@@ -33,12 +33,13 @@ Instruksi untuk memulai proyek
    ```sh
    php artisan migrate
    ```
-
 6.Jalankan php artisan db:seed
    ```sh
    php artisan db:seed
    ```
 7.Jalankan php artisan serve
-    ```sh
+   ```sh
    php artisan serve
    ```
+8. Selesai
+
